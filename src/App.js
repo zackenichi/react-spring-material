@@ -15,7 +15,7 @@ const App = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography variant="h1" component="h1" align="center" sx={styles.h1}>
-            Zac's Parallax Site
+            Moving blocks
           </Typography>
         </Grid>
         <Grid item xs={12}>
