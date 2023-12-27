@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Container, Grid, Typography } from '@mui/material';
+import Hero from './components/Hero';
 
-function App() {
+const styles = {
+  h1: {
+    fontWeight: 'bold',
+    fontSize: '40px',
+  },
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <Typography variant="h1" component="h1" align="center" sx={styles.h1}>
+            Zac's Parallax Site
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Hero />
+        </Grid>
+      </Grid>
+    </Container>
   );
-}
+};
 
 export default App;
